@@ -191,36 +191,3 @@ namespace ConsoleIntegração.Model
     }
 }
 
-
-/*public void UpdateAccount()
-        {
-            Entity account = new Entity(this.TableName);
-            account["fyi_cnpj"] = "34.142.740/1222-84";
-            account.Id = new Guid("eb01c7b8-fe26-ec11-b6e6-00224837234e");
-            account["primarycontactid"] = new EntityReference("contact", new Guid("a230c305-4fc8-e411-80ee-c4346bac7be8"));
-            this.Service.Update(account);
-        }
-*/
-
-/* public void DeleteAccount()
-    {
-
-        this.Service.Delete(this.TableName, new Guid("eb01c7b8-fe26-ec11-b6e6-00224837234e"));
-    } 
-*/
-/* public void CreateAccount()
-        {
-
-            Entity account = new Entity(this.TableName);
-            account["fyi_cnpj"] = "34.142.740/0001-84";
-            account["name"] = "Tste";
-            account["fyi_tipodaconta"] = new OptionSetValue(100000000);
-            account["fyi_totaldeoportunidades"] = 1;
-            account["fyi_valortotaldeoportunidades"] = new Money(5000);
-            account["primarycontactid"] = new EntityReference("contact", new Guid("74576fa0-2b26-ec11-b6e6-00224837234e"));
-            Guid accountId = this.Service.Create(account);
-
-            Console.WriteLine($"https://org03a12d08.crm2.dynamics.com/main.aspx?appid=2d81c7a0-6a21-ec11-b6e6-00224837a251&pagetype=entityrecord&etn=account&id={accountId}");
-            Console.ReadKey();
-        }
-       */
